@@ -12,7 +12,7 @@ config.email.port= 587
 config.email.user= "pruebadecorreo438@gmail.com"
 config.email.pass= "vozsosponkmaqoar"
 
-config.expiracion= 60000
+config.expiracion= 60000*5
 
 config.blacklist = [
     "http://localhost:4200"
