@@ -4,6 +4,7 @@ const config = require('../.././config.js').config
 const nodemailer = require("nodemailer")
 
 
+
 function tiempoTranscurrido(fechaISO) {
         const fechaInicio = new Date(fechaISO);
         const fechaActual = new Date();

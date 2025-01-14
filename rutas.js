@@ -1,4 +1,6 @@
  var usuariosController= require('./API/Controladores/usuariosController.js').usuariosController
+
+ var midleware= require("./midleware/midleware.js").midleware
  
 
 //Ruta al controlador para guardar datos
@@ -22,7 +24,7 @@ app.put('/usuarios/Actualizar', function (request, response) {
 
 
 //Ruta al controlador para Listar datos
-app.get('/usuarios/Listar', function (request, response) {
+app.get('/usuarios/Listar',midleware.Obligalogin ,midleware.SoloAdmin, function (request, response) {
    usuariosController.Listar(request, response)
 })
 
