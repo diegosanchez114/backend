@@ -197,4 +197,6 @@ usuariosModel.Activar= function (post, callback){
     })
 }
 
+usuariosModel.myModel= myModel
+
 module.exports.usuariosModel= usuariosModel

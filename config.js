@@ -2,6 +2,7 @@ var config = {
     email: {}
 }
 config.puerto= 3000
+config.bdPrueba= 'ProyectoFinalPrueba'
 config.bd= 'ProyectoFinal'
 config.secret= "123456oisjfoewirjow3eijweoir-+--++-"
 
